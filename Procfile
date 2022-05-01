@@ -1,1 +1,1 @@
-web: gunicorn pesquisa.wsgi
+web: gunicorn guia.wsgi
