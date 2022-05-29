@@ -23,3 +23,13 @@ class SlidesPesquisa(models.Model):
 
     def __str__(self) -> str:
         return self.segundo_texto
+
+
+class GuiaVideos(models.Model):
+    primeiro_texto = models.CharField(max_length=150)
+    segundo_texto = models.CharField(max_length=250)
+    terceiro_texto = models.TextField(max_length=400)
+    video = models.FileField(upload_to='videos_uploaded',null=True)
+
+    def __str__(self) -> str:
+        return self.primeiro_texto
