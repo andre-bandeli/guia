@@ -33,3 +33,10 @@ class GuiaVideos(models.Model):
 
     def __str__(self) -> str:
         return self.primeiro_texto
+
+class TiposViolencia(models.Model):
+    nome = models.CharField(max_length=150)
+    descricao = models.TextField(max_length=400)
+
+    def __str__(self) -> str:
+        return self.nome
