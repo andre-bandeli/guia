@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import ApresentacaoPesquisa, SlidesPesquisa
+
+admin.site.register(ApresentacaoPesquisa)
+
+admin.site.register(SlidesPesquisa)
