@@ -1,0 +1,190 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+      <!-- Vendor CSS Files -->
+    <link href="{% static 'bootstrap/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    
+
+    <!-- Template Main CSS File -->
+    
+    <title>Guia Virtual</title>
+  </head>
+
+
+  <body>
+
+
+     <!-- Hero Section -->
+     <section id="hero">
+        <div class="hero-container">
+            <a href="index.html" class="hero-logo" data-aos="zoom-in"></a>
+            <h1 data-aos="zoom-in">Repositório Online</h1>
+            <h2 data-aos="fade-up">Guia Virtual Sobre Atendimento a Mulheres Vítimas de Violência</h2>
+            <a data-aos="fade-up" data-aos-delay="200" href="#theme-carrousel" class="btn-get-started scrollto">Introdução</a>
+            <h3 data-aos="fade-up">VOCÊ, profissional das políticas públicas, que lida com o PÚBLICO em algum momento teve ou terá contato com situações 
+              de VIOLÊNCIA CONTRA A MULHER no exercício da sua profissão...
+              Seja você psicólogo, assistente social, educador, escrivão, entrevistador social, médico, agente
+              comunitário de saúde, serviços gerais... Esteja você no CRAS, CREAS, PSF, DDM, escola, CAPS, Judiciário, ou qualquer outro serviço público.
+              Por isso, este guia é para você; você e seus colegas de trabalho.</h3>
+              
+              <h4 data-aos="fade-up" >É de NOSSA responsabilidade acolher essa demanda!</h4>
+        </div>
+    </section>
+  <!-- End Hero -->
+<!-- Header  -->
+<header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <a href="index.html"><img src="#" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#carrousel">Introduçao</a></li>
+          <li><a class="nav-link scrollto" href="#guia">Guia</a></li>
+          <li><a class="nav-link scrollto" href="#text-area">Mapa da Violência</a></li>
+          <li><a class="nav-link scrollto" href="#grid-template">+ Conteúdos</a></li>
+          <li><a class="nav-link scrollto" href="#poema">Manifesto</a></li>
+          <li><a class="nav-link scrollto" href="#poema">Sobre</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+<!-- End Header -->
+
+<!-- Carrousel -->
+<div class="carrousel" id="carrousel">
+    <div class="owl-carousel owl-theme" id="theme-carrousel">
+
+      {% for apresentacao in apresentacao_pesquisa %}
+        <div class="item">
+          <div class="box">
+            <h3>{{apresentacao.primeiro_texto}}</h3>
+            <h2>{{apresentacao.segundo_texto}}</h2>
+            <h4>{{apresentacao.terceito_texto}}</h4>
+            <h4>{{apresentacao.quarto_texto}}</h4>
+            <button type="button" class="btn btn-info">Acessar Pesquisa Completa</button>
+          </div>
+
+          <div class="box">
+            <img src="{% static 'img/woman-3.jpg' %}" alt="">
+          </div>
+        </div>
+        {% endfor %}
+
+
+        {% for slides in slides_pesquisa %}
+        <div class="item">
+          <div class="box">
+            <h3>{{slides.primeiro_texto}}</h3>
+            <h2>{{slides.segundo_texto}}</h2>
+            <h4>{{slides.terceito_texto}}</h4>
+            <h4>{{slides.quarto_texto}}</h4>
+            <h4>{{slides.quinto_texto}}</h4>
+          </div>
+
+          <div class="box">
+            <img src="{% static 'img/woman-2.jpg' %}" alt="">
+          </div>
+        </div>
+        {% endfor %}
+        
+      </div>
+  </div>
+<!-- End Carrousel -->
+
+
+ <!-- about company -->
+ <section id="about-company">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 mx-auto">
+              
+              <div id="accordionExample" class="accordion shadow">
+        
+                <div class="card">
+                  <div id="headingOne" class="card-header shadow-sm border-0">
+                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="d-block position-relative text-uppercase collapsible-link py-2">Nossa Política de Projetos</a></h6>
+                  </div>
+                  <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
+                    <div class="card-body p-5">
+                      <p class="font-weight-light m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, vero quo ratione animi debitis molestias officiis praesentium harum incidunt aspernatur, ipsam totam repellendus voluptatum provident non neque, labore pariatur nisi.</p>
+                    </div>
+                  </div>
+                </div>
+        
+                
+                <div class="card">
+                  <div id="headingTwo" class="card-header shadow-sm border-0">
+                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="d-block position-relative collapsed  text-uppercase collapsible-link py-2">Nossa Política de Certificação</a></h6>
+                  </div>
+                  <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
+                    <div class="card-body p-5">
+                      <p class="font-weight-light m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit nobis hic veniam veritatis neque ut corrupti harum sint adipisci tempora. Delectus animi est fugit quaerat sequi ipsa, quod similique soluta?</p>
+                    </div>
+                  </div>
+                </div>
+        
+                
+                <div class="card">
+                  <div id="headingThree" class="card-header shadow-sm border-0">
+                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="d-block position-relative collapsed  text-uppercase collapsible-link py-2">ORÇAMENTOS E NOTAS</a></h6>
+                  </div>
+                  <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
+                    <div class="card-body p-5">
+                      <p class="font-weight-light m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste fugit a ea non velit veniam nemo veritatis odio quos deserunt natus asperiores, eaque earum quod neque numquam, eligendi sequi officia.</p>
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+    </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js' %}" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>    <script src="{% static 'bootstrap/aos.js' %}"></script>
+<script src="{% static 'bootstrap/glightbox.min.js' %}"></script>
+<script src="{% static 'bootstrap/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'bootstrap/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/carrousel.js' %}"></script>
+<script src="{% static 'js/carrousel-2.js' %}"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

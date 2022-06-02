@@ -3,8 +3,10 @@
 @import url('http://fonts.cdnfonts.com/css/gotham');
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Gotham', sans-serif;
   color: white;
+  background-color: red;
+  height: 500vh;
 
 
 }
@@ -404,6 +406,7 @@ h1, h2, h3, h4, h5, h6 {
 
   width: 100%;
   height: 100vh;
+  background-color: red;
 
 
 }
@@ -432,6 +435,7 @@ h1, h2, h3, h4, h5, h6 {
 
   display: inline;
   font-family: 'Gotham', sans-serif;
+  background-color: red;
 }
 
 .carrousel .owl-carousel .item .box h3 {
@@ -454,8 +458,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 5vh;
   margin-left: 10vh;
   font-size: 20px;
-  letter-spacing: 1.5px;
-  font-weight: 100;
+  line-height: 15px;
+  font-family: 'Gotham', sans-serif;
+  color: red;
 
 }
 .carrousel .owl-carousel .item .box img {
@@ -743,25 +748,9 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-#text-area {
-
-  margin-top: 15vh;
-  width: 100%;
-  text-align: center;
-}
-
-#text-area .container .btn {
-    margin-left: 0vh;
-}
 
 
 
-@media (max-width: 550px) {
-  #text-area {
-
-    margin-top: 35vh;
-  }
-}
 #carouselExampleIndicators {
 
   height: 70vh;
@@ -1098,5 +1087,188 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	font-size: 1.25em;
 	font-weight: normal;
+}
+
+
+
+
+
+
+#about-company {
+  width: 100%;
+  height: auto;
+  margin-top: 25vh;
+  padding-bottom: 10px;
+  position: relative;
+
+}
+#about-company .container {
+  width: 80%;
+  height: auto;
+  margin-top: 15vh;
+
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px;
+  margin-bottom: 2vh;
+
+}
+#about-company .container .container-md {
+  width: 95%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+#about-company .container .container-md .col-12 {
+ color: rgb(0, 0, 0);
+ margin-top: 5vh;
+
+}
+
+#about-company .container .container-md .col-12 h2 {
+  font-size: 2vw;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+}
+#about-company .container .container-md .col-12 h4 {
+  width: 100%;
+  text-align: center;
+}
+
+#about-company .container .row {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+#about-company .container .row .card {
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid orangered;
+  margin-top: .5vh;
+  text-align: center;
+  color: black;
+}
+#about-company .container .row .card:hover {
+  background-color: rgba(3, 3, 3, 0.815);
+  transition: .4s ease-in-out;
+}
+#about-company .container .row .card:hover a {
+  color: white;
+}
+#about-company .container .row .card .card-body p {
+  color: rgb(0, 0, 0);
+}
+#about-company .container .row .card:hover .card-body p {
+  color: rgb(255, 255, 255);
+}
+#about-company .container .row .card h6 {
+  color: black;
+}
+#about-company .container .row .card a {
+  color: black;
+}
+#about-company .container .row .card .card-header {
+  color: rgba(165, 10, 10, 0.795);
+  background-color: transparent;
+}
+#about-company .container .row .card p {
+   font-size: 16px;
+   text-align: justify;
+   color: rgb(0, 0, 0);
+}
+
+#about-company .col-12 .grid {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#about-company .grid-template-rows-1 {
+grid-template-rows: 50% 50%;
+}
+
+
+/* Grid Item */
+#about-company .item {
+margin: 0px;
+  background-color: transparent;
+text-align: center;
+font-size: 1.5em;
+}
+#about-company .item img{
+width: 90%;
+}
+
+
+#about-company .grid {
+
+  width: 80%;
+margin: 0 auto;
+  margin-top: 10vh;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+@media (max-width: 1600px) {
+  
+  #about-company .container .container-md .col-12 h2 {
+      font-size: 2.5vw;
+
+  }
+  #about-company .container .container-md .col-12 h4 {
+      font-size: 1.5vw;
+      text-align: justify;
+  }
+}
+
+@media (max-width: 1000px) {
+  #about-company .container .container-md .col-12 h2 {
+      font-size: 2.5vw;
+
+  }
+  #about-company .container .container-md .col-12 h4 {
+      font-size: 1.8vw;
+      text-align: justify;
+  }
+}
+
+@media (max-width: 800px) {
+
+  #about-company .item {
+      width: 100%;
+  }
+  #about-company .item img{
+      width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  #about-company .item {
+      width: 120%;
+  }
+  #about-company .item img{
+      width: 100%;
+  }
+  #about-company .container .container-md .col-12 h2 {
+      font-size: 3.5vw;
+      width: 100%;
+
+  }
+  #about-company .container .container-md .col-12 h4 {
+      font-size: 3vw;
+      text-align: justify;
+  }
 }
 

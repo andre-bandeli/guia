@@ -12,7 +12,7 @@ def index(request):
     data['tipos_violencia'] = TiposViolencia.objects.all()
 
 
-    return render(request, 'index.html', data)
+    return render(request, 'index-2.html', data)
 
 def about(request):
     return render(request, 'about.html')
