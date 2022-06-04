@@ -664,8 +664,8 @@ table {
     }
     .carrousel .owl-carousel .item .box h4 {
 
-      font-size: 14px;
-      line-height: 20px;
+      font-size: 20px;
+      line-height: 25px;
       width: 100%;
       margin-left: 5vh;
   
@@ -863,7 +863,26 @@ table {
 }
 
 
+@media (max-width:1050px) {
+  .guide {
+    height: 170vh;
+  }
+  .guide .col-12 {
+    margin-top: 10vh;
+    height: 45vh;
 
+  }
+  .guide .col-12 .col-6 {
+
+    height: 45vh;
+
+  }
+  .guide .col-12 .col-6 .btn {
+  
+    margin-top: 2vh;
+  }
+  
+}
 @media (max-width:950px) {
   .guide {
     height: 170vh;
@@ -899,80 +918,85 @@ table {
 }
 @media (max-width:550px) {
   .guide {
-
-    height: 300vh;
+    height: 200vh;
   }
   .guide .col-12 {
     display: inline-block;
-    width: 100%;
-    margin-top: -5vh;
-
-  } 
-  .guide .col-12 .col-6 h2{
-
-    width: 450px;
+    margin-top: 0vh;
+  }
+  .guide .col-12 .col-6 {
+    width: 400px;
+    height: 70%;
+  }
+  .guide .col-12 .col-6 h2 {
+    margin-top: 5vh;
+    width: 400px;
     margin-left: 0vh;
+    font-size: 18px;
+  }
+  .guide .col-12 .col-6 h3 {
+    width: 400px;
+    margin-left: 0vh;
+  }
+  .guide .col-12 .col-6 iframe {
+    width: 400px;
     margin-top: 2vh;
-    padding-top: 2vh;
-
-  }
-  .guide .col-12 .col-6 h3{
-
-    width: 470px;
-    margin-left: 0vh;
-
-  }
-  .guide .col-12 .col-6 {
-    margin-top: 10vh;
-    width: 470px;
-
   }
   .guide .col-12 .col-6 .btn {
     margin-left: 0vh;
+  }
 
-  }
-  .guide .col-12 .col-6 iframe {
-    width: 470px;
-    margin-bottom: 2vh;
-  }
-  
 }
-@media (max-width:400px) {
+@media (max-width:450px) {
   .guide {
-
-    height: 300vh;
+    height: 200vh;
   }
-
-  .guide .col-12 .col-6 h2{
-
-    width: 350px;
-
-
-  }
-  .guide .col-12 .col-6 h3{
-
-    width: 350px;
-
-
+  .guide .col-12 {
+    display: inline-block;
+    margin-top: 0vh;
   }
   .guide .col-12 .col-6 {
-
-    width: 350px;
-
+    width: 300px;
   }
-  .guide .col-12 .col-6 .btn {
-    margin-left: 0vh;
-
+  .guide .col-12 .col-6 h2 {
+    margin-top: 5vh;
+    width: 300px;
+    font-size: 14px;
+  }
+  .guide .col-12 .col-6 h3 {
+    width: 300px;
+    font-size: 10px;
   }
   .guide .col-12 .col-6 iframe {
-    width: 350px;
-
-
+    width: 300px;
+    margin-top: 2vh;
   }
-  
+
 }
+@media (max-width:350px) {
+  .guide {
+    height: 200vh;
+  }
+  .guide .col-12 {
+    display: inline-block;
+    margin-top: 0vh;
+  }
+  .guide .col-12 .col-6 {
+    width: 200px;
+  }
+  .guide .col-12 .col-6 h2 {
+    margin-top: 5vh;
+    width: 200px;
+  }
+  .guide .col-12 .col-6 h3 {
+    width: 200px;
+  }
+  .guide .col-12 .col-6 iframe {
+    width: 270px;
+    margin-top: 2vh;
+  }
 
-
+}
 
 .title {
   width: 100%;
@@ -995,10 +1019,12 @@ table {
 
 #servicos {
   height: 70vh;
+  margin-top: 20vh;
 }
 #servicos .container {
 
   height: 70vh;
+  margin-top: 10vh;
 }
 #servicos .badge {
   font-weight: 400;
@@ -1043,6 +1069,7 @@ table {
   text-transform: uppercase;
   font-weight: 700;
   outline: none;
+  align-items: center;
 }
 
 #servicos .button-group button + button {
@@ -1071,48 +1098,196 @@ table {
 
   height: 50vh;
 }
+@media (max-width: 1050px) {
+
+  #servicos .element-item h2  {
+    font-size: 17px;
+  }
+}
+@media (max-width: 850px) {
+
+  #servicos .element-item h2  {
+    font-size: 17px;
+  }
+}
+@media (max-width: 750px) {
+  
+  #servicos .button-group {
+    
+    font-size: 12px;
+    height: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #servicos .button-group button {
+    
+    margin-left: 2vh;
+    width: 120px;
+  }
+  #servicos .element-item h2  {
+    font-size: 15px;
+  }
+  }
+@media (max-width: 550px) {
+  
+#servicos .button-group {
+  
+  font-size: 12px;
+  height: auto;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#servicos .button-group button {
+  
+  margin-left: 2vh;
+  width: 120px;
+}
+#servicos .element-item h2  {
+  font-size: 15px;
+}
+}
+@media (max-width: 500px) {
+  
+  #servicos .button-group {
+    
+    font-size: 10px;
+    height: auto;
+    width: 90%;
+  }
+  #servicos .button-group button {
+    
+    margin-left: 2vh;
+    width: 100px;
+  }
+  #servicos .element-item h2  {
+    font-size: 15px;
+  }
+}
+@media (max-width: 450px) {
+  
+  #servicos .button-group {
+    
+    font-size: 10px;
+    height: auto;
+    width: 100%;
+  }
+  #servicos .button-group button {
+    
+    margin-left: 2vh;
+    width: 100px;
+  }
+  #servicos .element-item h2  {
+    font-size: 15px;
+  }
+}
+@media (max-width: 350px) {
+  
+  #servicos .button-group {
+    
+    font-size: 10px;
+    height: auto;
+    width: 80%;
+  }
+}
+@media (max-width: 280px) {
+  
+  #servicos .button-group {
+    
+    font-size: 10px;
+    height: auto;
+    width: 100%;
+    font-size: 9px;
+  }
+  #servicos .button-group button {
+    
+    margin-left: 2vh;
+    width: 80px;
+  }
+}
 
 #poster {
-  height: 50vh;
+  width: 100%;
+  height: 60vh;
+  display: grid;
 }
-#poster .col-12 {
+#poster .grid-collum {
+
+  width: 100%;
   height: 100%;
-  display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
-#poster .col-12 img{
-  width: 110%;
-  height: 50vh;
-  margin-left: -3vh;
+
+#poster .grid-collum  {
+	grid-template-rows: 70%;
 }
-#poster .col-12 .box{
-  width: 85%;
-  height: 45vh;
-  position: absolute;
-  margin-top: -48vh;
-  margin-left: 10%;
-  visibility: visible;
+
+
+/* Grid Item */
+#poster .item {
+	margin: 5px;
+	background: rgba(204, 202, 202, 0.836);
+	text-align: center;
+	font-size: 1.5em;
   cursor: pointer;
-  
-}
-
-#poster .col-12 .box h2{
-  font-size: 30px;
   color: transparent;
-  margin-top: 40vh;
-  margin-left: 1vh;
-  
-
+  display: inline-block;
 }
-#poster .col-12 .box:hover h2{
-  font-size: 30px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  margin-top: 20vh;
+
+#poster .item:hover {
+	margin: 5px;
+	background: rgba(15, 15, 15, 0.658);
+	text-align: center;
+	font-size: 1.5em;
+  color: transparent;
+}
+#poster .item:hover h2 {
   position: absolute;
-  transition: 1.5s ease;
+  margin-top: -30vh;
+  transition: 1.5s ease-in-out;
+  margin-left: 10%;
+  opacity: 1;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}
+
+#poster .item img {
+	width: 100%;
+  height: 100%;
+  margin-top: 0vh;
+}
+
+#poster .grid {
+
+	max-width: 80vh;
+	margin: 0 auto;
+    margin-top: 10vh;
 
 }
 
+@media (max-width:550px) {
+  
+#poster {
+  width: 100%;
+  height: 40vh;
+  display: grid;
+}
+
+#poster .item:hover h2 {
+  position: absolute;
+  margin-top: -10vh;
+  transition: .5s ease-in-out;
+  margin-left: 0vh;
+  opacity: 1;
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+}
 
 
 
