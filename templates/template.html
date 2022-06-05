@@ -1,0 +1,235 @@
+
+{% extends 'base.html' %}    
+{% load static %}
+
+
+{% block content %}
+
+ <!-- Hero Section -->
+ <section id="hero">
+  <div class="hero-container">
+      <a href="index.html" class="hero-logo" data-aos="zoom-in"></a>
+      <h1 data-aos="zoom-in">Repositório Online</h1>
+      <h2 data-aos="fade-up">Guia Virtual Sobre Atendimento a Mulheres Vítimas de Violência</h2>
+      <a data-aos="fade-up" data-aos-delay="200" href="#theme-carrousel" class="btn-get-started scrollto">Introdução</a>
+      <h3 data-aos="fade-up">VOCÊ, profissional das políticas públicas, que lida com o PÚBLICO em algum momento teve ou terá contato com situações 
+        de VIOLÊNCIA CONTRA A MULHER no exercício da sua profissão...
+        Seja você psicólogo, assistente social, educador, escrivão, entrevistador social, médico, agente
+        comunitário de saúde, serviços gerais... Esteja você no CRAS, CREAS, PSF, DDM, escola, CAPS, Judiciário, ou qualquer outro serviço público.
+        Por isso, este guia é para você; você e seus colegas de trabalho.</h3>
+        
+        <h4 data-aos="fade-up" >É de NOSSA responsabilidade acolher essa demanda!</h4>
+  </div>
+</section>
+
+<!-- End Hero -->
+<!-- Header -->
+<header id="header" class="d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <div class="logo">
+      <a href="index.html"><img src="#" alt="" class="img-fluid"></a>
+    </div>
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto" href="#carrousel">Introduçao</a></li>
+        <li><a class="nav-link scrollto" href="#guia">Guia</a></li>
+        <li><a class="nav-link scrollto" href="#text-area">Mapa da Violência</a></li>
+        <li><a class="nav-link scrollto" href="#grid-template">+ Conteúdos</a></li>
+        <li><a class="nav-link scrollto" href="#poema">Manifesto</a></li>
+        <li><a class="nav-link scrollto" href="#poema">Sobre</a></li>
+      </ul>
+      <img class="bi bi-list mobile-nav-toggle" src="{% static 'img/menu.png' %}"></i>
+    </nav>
+
+  </div>
+</header>
+<!-- End Header -->
+
+<!-- Carrousel -->
+<div class="carrousel" id="carrousel">
+  <div class="owl-carousel owl-theme" id="theme-carrousel">
+
+    {% for apresentacao in apresentacao_pesquisa %}
+      <div class="item">
+          <div class="box">
+            <h3>{{apresentacao.primeiro_texto}}</h3>
+            <h2>{{apresentacao.segundo_texto}}</h2>
+            <h4>{{apresentacao.terceiro_texto}}</h4>
+            <h4>{{apresentacao.quarto_texto}}</h4>
+            <button type="button" class="btn btn-info">Acessar Pesquisa Completa</button>
+          </div>
+      <div>
+      </div>
+
+        <div class="box">
+          <video src="{% static 'img/magoz-animation.mp4' %}" autoplay muted loop></video>
+        </div>
+      </div>
+
+      {% endfor %}
+      {% for slides in slides_pesquisa %}
+      <div class="item">
+          <div class="box">
+                <h3>{{slides.primeiro_texto}}</h3>
+                <h2>{{slides.segundo_texto}}</h2>
+                <h4>{{slides.terceito_texto}}</h4>
+                <h4>{{slides.quarto_texto}}</h4>
+                <h4>{{slides.quinto_texto}}</h4>
+            </div>
+          <div>
+      </div>
+          <div class="box">
+              <video src="{% static 'img/magoz-animation.mp4' %}" autoplay muted loop></video>
+          </div>
+      </div>
+      {% endfor %}
+    
+    </div>
+
+</div>
+
+<!-- End Carrousel -->
+
+<!-- End Poster Section -->
+
+
+<!-- Features Section -->
+<div class="guide" id="guia">
+  <div class="title">
+    <h2>Guia Virtual</h2>
+    <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias fugit tempora officiis quisquam autem error minus totam est, </h3>
+  </div>
+  {% for guia_videos in guia_videos %}
+  <div class="col-12" data-aos="fade-left" data-aos-delay="100">
+    <div class="col-sm">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Ew-VruAckjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-sm">
+      <h2>{{guia_videos.primeiro_texto}}</h2>
+      <h3>{{guia_videos.terceiro_texto}}</h3>
+      <button type="button" class="btn btn-danger">Compartilhar</button>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<!-- End Features Section -->
+
+
+<!-- End Features Section -->
+  <div id="servicos" class="block">
+    <div class="title">
+      <h2>Mapa da Violência</h2>
+      <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias fugit tempora officiis quisquam autem error minus totam est, </h3>
+    </div>
+    <div class="container">
+    
+
+      <div class="button-group">
+        
+        <button type="button" class="active" data-filter=".sexual">Sexual</button>
+        {% for tipos in tipos_violencia %}
+        <button type="button"  data-filter=".{{tipos.nome}}"> {{tipos.nome}}</button>
+        {% endfor %}
+
+      </div>
+
+      <div class="row grid">
+
+        <div class="col-6 element-item sexual">
+    
+          <div class="box">
+              <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, iste perferendis. Iure fugit odio, quia, rerum aperiam cumque dolor ea voluptatem alias dolorem asperiores in quis nemo sunt eligendi distinctio.</h2>     
+          </div>
+
+      </div>
+        {% for tipos in tipos_violencia %}
+          <div class="col-6 element-item {{tipos.nome}}">
+    
+              <div class="box">
+                  <h2>{{tipos.descricao}}</h2>     
+              </div>
+
+          </div>
+        {% endfor %}
+
+      </div>
+
+    </div>
+  </div>
+  <!-- End Features Section -->
+  <section id="poster">
+
+ <div class="grid-collum">
+  <div class="item">
+    <img src="{% static 'img/magoz-education.webp' %}" alt="">
+    <h2>Algum texto aparecendo</h2>
+</div>
+<div class="item">
+    <img src="{% static 'img/magoz-our.webp' %}" alt="">
+    <h2>Algum texto aparecendo</h2>
+</div>
+<div class="item">
+    <img src="{% static 'img/magoz-our.webp' %}" alt="">
+    <h2>Algum texto aparecendo</h2>
+</div>
+ </div>
+
+
+
+  
+  </section>
+<!-- End Features Section   -->
+  <section id="grid-template">
+    <div class="title">
+      <h2>Conteúdos Úteis</h2>
+      <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias fugit tempora officiis quisquam autem error minus totam est, </h3>
+    </div>
+    
+      <div>
+
+        <section class="grid grid-template-areas-2">
+          <div class="item logo"> </div>
+          <div class="item nav"></div>
+          <div class="item content"></div>
+          <div class="item sidenav"></div>
+          <div class="item advert"></div>
+          <div class="item footer"></div>
+        </section>
+        </div>
+
+  </section>
+  <!-- End Poster Section -->
+
+  <section id="poema">
+    <div class="container">
+      <h2>“A roupa era curta</h2>
+        <h2> Ela merecia.</h2>
+          <h2>O batom vermelho,</h2>
+            <h2>Porte de vadia.</h2>
+              <h2> Provoca o decote.</h2>
+                <h2>  Fere fundo o corte.</h2>
+                  <h2> Morte lenta ao ventre forte.</h2>
+                    <h2> Eu às vezes mudo o meu caminho,</h2>
+                      <h2>  quando vejo que um homem vem em minha direção.</h2>
+                        <h2> Não sei se vem de rosa ou espinho,</h2>
+                          <h2> se é um tapa ou é carinho,</h2>
+                            <h2>o bendito ou agressão”</h2>
+                              <h2> (Amanda Pacífico / Cacau de Sá)</h2>
+     
+    </div>
+  </section>
+
+<!-- Video Final -->
+<section id="data-resource">
+
+<video controls poster="{% static 'img/woman-5.avif' %}" class="bg_video">
+  <source src="{% static 'img/woman-1.mp4' %}" type="video/webm">
+</video>
+</section>
+
+
+
+{% endblock %}
