@@ -30,3 +30,6 @@ def home(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def page_text(request):
+    return render(request, 'pagina_texto.html')
