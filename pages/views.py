@@ -33,3 +33,9 @@ def about(request):
 
 def page_text(request):
     return render(request, 'pagina_texto.html')
+
+def page_text_two(request):
+    return render(request, 'pagina_texto_two.html')
+
+def page_text_three(request):
+    return render(request, 'pagina_texto_three.html')
