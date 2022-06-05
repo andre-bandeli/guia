@@ -2,6 +2,18 @@ from pyexpat import model
 from django.db import models
 
 
+
+
+class Hero(models.Model):
+    titulo = models.CharField(max_length=50)
+    subtitulo = models.CharField(max_length=150)
+    texto_auxiliar = models.CharField(max_length=485)
+    ultimo_texto = models.CharField(max_length=150)
+
+    def __str__(self) -> str:
+        return self.titulo
+
+
 class ApresentacaoPesquisa(models.Model):
     primeiro_texto = models.CharField(max_length=50)
     segundo_texto = models.CharField(max_length=50)
@@ -29,7 +41,7 @@ class GuiaVideos(models.Model):
     primeiro_texto = models.CharField(max_length=150)
     segundo_texto = models.CharField(max_length=250)
     terceiro_texto = models.TextField(max_length=400)
-    video = models.FileField(upload_to='videos_uploaded',null=True)
+    link = models.TextField(max_length=400)
 
     def __str__(self) -> str:
         return self.primeiro_texto
