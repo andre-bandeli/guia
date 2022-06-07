@@ -8,15 +8,19 @@
  <!-- Hero Section -->
  <section id="hero">
   <div class="hero-container">
-    {% for linha in hero %}
+
       <a href="index.html" class="hero-logo" data-aos="zoom-in"></a>
-      <h1 data-aos="zoom-in">{{linha.titulo}}</h1>
-      <h2 data-aos="fade-up">{{linha.subtitulo}}</h2>
+      <h1 data-aos="zoom-in">Repositório Online</h1>
+      <h2 data-aos="fade-up">GUIA VIRTUAL SOBRE ATENDIMENTO A MULHERES VÍTIMAS DE VIOLÊNCIA</h2>
       <a data-aos="fade-up" data-aos-delay="200" href="#theme-carrousel" class="btn-get-started scrollto">Introdução</a>
-      <h3 data-aos="fade-up">{{linha.texto_auxiliar}}</h3>
+      <h3 data-aos="fade-up">VOCÊ, PROFISSIONAL DAS POLÍTICAS PÚBLICAS, QUE LIDA COM O PÚBLICO EM ALGUM
+         MOMENTO TEVE OU TERÁ CONTATO COM SITUAÇÕES DE VIOLÊNCIA CONTRA A MULHER NO EXERCÍCIO DA SUA PROFISSÃO... 
+         SEJA VOCÊ PSICÓLOGO, ASSISTENTE SOCIAL, EDUCADOR, ESCRIVÃO, ENTREVISTADOR SOCIAL, MÉDICO, AGENTE COMUNITÁRIO DE SAÚDE, 
+         SERVIÇOS GERAIS... ESTEJA VOCÊ NO CRAS, CREAS, PSF, DDM, ESCOLA, CAPS, JUDICIÁRIO, OU QUALQUER OUTRO SERVIÇO PÚBLICO. 
+        POR ISSO, ESTE GUIA É PARA VOCÊ; VOCÊ E SEUS COLEGAS DE TRABALHO.</h3>
         
-        <h4 data-aos="fade-up" >{{linha.ultimo_texto}}</h4>
-        {% endfor %}
+        <h4 data-aos="fade-up" >É DE NOSSA RESPONSABILIDADE ACOLHER ESSA DEMANDA!</h4>
+
   </div>
 </section>
 
@@ -204,34 +208,14 @@
     </div>
     
       <div>
-
         <section class="grid grid-template-areas-2">
-          <div class="item logo">
+          {% for link in links_externos %}
+          <div class="item {{link.tag_classe}}">
             <h2>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora
+              {{link.texto}}
             </h2>
           </div>
-          <div class="item nav">
-            <h2>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora
-            </h2>
-          </div>
-          <div class="item content">
-            <h2>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora
-            </h2>
-          </div>
-          <div class="item sidenav">
-            <h2>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora
-            </h2>
-          </div>
-          <div class="item advert"><h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora
-          </h2></div>
-          <div class="item footer"><h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora
-          </h2></div>
+          {% endfor %}
         </section>
         </div>
 

@@ -493,6 +493,7 @@ table {
   
     width: 100%;
     height: 100%;
+    background-color: blue;
   
 }
 .carrousel .owl-carousel .item {
@@ -592,7 +593,7 @@ table {
 
 @media (max-width: 550px) {
   .carrousel {
-    min-height: 140vh;
+    max-height: 140vh;
   }
   .carrousel .owl-carousel .item{
     width: 100%;
@@ -856,6 +857,7 @@ table {
 @media (max-width: 550px) {
   #servicos {
     height: auto;
+    background-color: blue;
   }
   #servicos .row h2 {
 
@@ -917,7 +919,7 @@ table {
 
 #poster {
   width: 100%;
-  height: 60vh;
+  height: auto;
   margin-top: 10vh;
   display: grid;
 
@@ -979,8 +981,8 @@ table {
 
 @media (max-width:550px) {
   #poster {
-    height: 200vh;
-    margin-top: 50vh;
+    height: 140vh;
+    margin-top: 20vh;
   }
   #poster .item {
     width: 100%;
@@ -1150,8 +1152,10 @@ margin-top: 10vh;
 #btn-down .container img{
   width: 50px;
 }
-
 @media (max-width:550px) {
+  #grid-template {
+    margin-top: 20vh;
+  }
   #grid-template .logo h2 {
     font-size: 15px;
   }
