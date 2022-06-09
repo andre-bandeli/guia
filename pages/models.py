@@ -23,7 +23,6 @@ class ApresentacaoPesquisa(models.Model):
     segundo_texto = models.CharField(max_length=50)
     terceiro_texto = models.TextField(max_length=400)
     quarto_texto = models.TextField(max_length=400)
-    imagem = models.ImageField(upload_to="imagem//%Y/%m/%d", blank=True)
 
     class Meta:
         verbose_name = "Apresentação Pesquisa"
@@ -39,7 +38,6 @@ class SlidesPesquisa(models.Model):
     terceiro_texto = models.TextField(max_length=400)
     quarto_texto = models.TextField(max_length=400)
     quinto_texto = models.TextField(max_length=400)
-    imagem = models.ImageField(upload_to="imagem_slide//%Y/%m/%d", blank=True)
 
 
     class Meta:
