@@ -30,7 +30,7 @@
   <div class="container d-flex align-items-center justify-content-between">
 
     <div class="logo">
-      <a href="index.html"><img src="#" alt="imagemInicial" class="img-fluid"></a>
+      <a href="index.html"><img src="{% static 'img/unicamp-logo.png' %}" alt="imagemInicial" class="img-fluid"></a>
     </div>
 
     <nav id="navbar" class="navbar">
@@ -39,6 +39,7 @@
         <li><a class="nav-link scrollto" href="#carrousel">Introduçao</a></li>
         <li><a class="nav-link scrollto" href="#guia">Guia</a></li>
         <li><a class="nav-link scrollto" href="#servicos">Mapa da Violência</a></li>
+        <li><a class="nav-link scrollto" href="#poster">Referências</a></li>
         <li><a class="nav-link scrollto" href="#grid-template">+ Conteúdos</a></li>
         <li><a class="nav-link scrollto" href="#poema">Manifesto</a></li>
         <li><a class="nav-link scrollto" href="/about">Sobre</a></li>
@@ -120,6 +121,7 @@
   </div>
   {% endfor %}
 </div>
+
 <!-- End Features Section -->
 <section id="btn-down">
   <div class="container">
@@ -168,7 +170,8 @@
       </div>
 
     </div>
-  </div> 
+  </div>
+  
   <!-- End Features Section -->
 
   <section id="btn-down">
@@ -183,20 +186,21 @@
   <div class="item">
     <a href="{% url 'pages:page_text' %}">
     <img src="{% static 'img/magoz-education.webp' %}" alt="imagem_slide"></a>
-    <h2>Algum texto aparecendo</h2>
+    <h2>Texto 1 </h2>
 </div>
 <div class="item">
   <a href="{% url 'pages:page_text_two' %}">
     <img src="{% static 'img/magoz-our.webp' %}" alt="imagem_slide"></a>
-    <h2>Algum texto aparecendo</h2>
+    <h2>Texto 2</h2>
 </div>
 <div class="item">
   <a href="{% url 'pages:page_text_three' %}">
     <img src="{% static 'img/magoz.jpg' %}" alt="imagem_slide"></a>
-    <h2>Algum texto aparecendo</h2>
+    <h2>Texto 3 </h2>
 </div>
  </div>
 
+ 
 
   
   </section>

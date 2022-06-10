@@ -112,7 +112,8 @@ table {
   #header .logo img {
     padding: 0;
     margin: 0;
-    max-height: 40px;
+    width: 90px;
+
   }
   @media (max-width: 992px) {
     #header {
@@ -126,6 +127,14 @@ table {
   @media (max-width: 992px) {
     .scrolled-offset {
       margin-top: 90px;
+    }
+  }
+  @media (max-width: 550px) {
+    #header .logo img {
+      padding: 0;
+      margin: 0;
+      width: 50px;
+  
     }
   }
   
@@ -485,16 +494,16 @@ table {
 .carrousel {
 
     width: 100%;
-    height: 90vh;
-    margin-top: 10vh;
+    height: auto;
+    margin-top: 20vh;
+    background-color: transparent;
   
 }
 .carrousel .owl-carousel {
   
     width: 100%;
-    height: 100%;
-    background-color: blue;
-  
+    height: 100%;  
+    margin-top: 10vh;
 }
 .carrousel .owl-carousel .item {
   
@@ -515,6 +524,7 @@ table {
     margin-left: 15%;
     margin-right: 15%;
     width: 60%;
+    margin-top: 5vh;
     height: 100%;
   
 }
@@ -593,7 +603,8 @@ table {
 
 @media (max-width: 550px) {
   .carrousel {
-    max-height: 140vh;
+
+    height: auto;
   }
   .carrousel .owl-carousel .item{
     width: 100%;
@@ -733,6 +744,7 @@ table {
 @media (max-width: 550px) {
   .guide {
     height: auto;
+    margin-top: 15vh;
   }
   .guide .title h2 {
   font-size: 24px;
@@ -780,7 +792,7 @@ table {
 }
 
 #servicos {
-  height: 70vh;
+  height: auto;
   margin-top: 10vh;
 }
 .servicos .title {
@@ -857,7 +869,7 @@ table {
 @media (max-width: 550px) {
   #servicos {
     height: auto;
-    background-color: blue;
+
   }
   #servicos .row h2 {
 
@@ -981,8 +993,8 @@ table {
 
 @media (max-width:550px) {
   #poster {
-    height: 140vh;
-    margin-top: 20vh;
+    height: auto;
+    margin-top: 40vh;
   }
   #poster .item {
     width: 100%;
