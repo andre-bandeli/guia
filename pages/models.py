@@ -37,7 +37,6 @@ class SlidesPesquisa(models.Model):
     segundo_texto = models.CharField(max_length=50)
     terceiro_texto = models.TextField(max_length=400)
     quarto_texto = models.TextField(max_length=400)
-    quinto_texto = models.TextField(max_length=400)
 
 
     class Meta:

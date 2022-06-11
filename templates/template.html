@@ -78,9 +78,8 @@
           <div class="box">
                 <h3>{{slides.primeiro_texto}}</h3>
                 <h2>{{slides.segundo_texto}}</h2>
-                <h4>{{slides.terceito_texto}}</h4>
+                <h4>{{slides.terceiro_texto}}</h4>
                 <h4>{{slides.quarto_texto}}</h4>
-                <h4>{{slides.quinto_texto}}</h4>
             </div>
           <div>
       </div>
@@ -120,17 +119,20 @@
     </div>
   </div>
   {% endfor %}
+
+
+  <section id="btn-down">
+    <div class="container">
+      <a href="#map">
+      <img src="{% static 'img/down.png' %}" alt="botaoParaBaixo"></a>
+    </div>
+  </section>
 </div>
 
 <!-- End Features Section -->
-<section id="btn-down">
-  <div class="container">
-    <a href="#servicos">
-    <img src="{% static 'img/down.png' %}" alt="botaoParaBaixo"></a>
-  </div>
-</section>
+
 <!-- End Features Section -->
-  <div id="servicos" class="block">
+  <div id="map" class="block">
     <div class="title">
       <h2>Mapa da Violência</h2>
       <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias fugit tempora officiis quisquam autem error minus totam est, </h3>
@@ -149,7 +151,7 @@
 
       <div class="row grid">
 
-        <div class="col-6 element-item sexual">
+        <div class="col-10 element-item sexual">
     
           <div class="box">
               <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora eveniet iure aspernatur animi laborum consequatur repellendus enim rem, numquam facilis unde distinctio nobis, laudantium libero commodi deleniti quaerat nulla! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempora eveniet iure aspernatur animi laborum consequatur repellendus enim rem, numquam facilis unde
@@ -158,7 +160,7 @@
 
       </div>
         {% for tipos in tipos_violencia %}
-          <div class="col-6 element-item {{tipos.nome}}">
+          <div class="col-10 element-item {{tipos.nome}}">
     
               <div class="box">
                   <h2>{{tipos.descricao}}</h2>     
@@ -172,14 +174,14 @@
     </div>
   </div>
   
-  <!-- End Features Section -->
-
   <section id="btn-down">
     <div class="container">
       <a href="#poster">
       <img src="{% static 'img/down.png' %}" alt="imagem_slide"></a>
     </div>
   </section>
+  <!-- End Features Section -->
+
   <section id="poster">
 
  <div class="grid-collum">
@@ -222,15 +224,16 @@
           {% endfor %}
         </section>
         </div>
+        <section id="btn-down">
+          <div class="container">
+            <a href="#poema">
+            <img src="{% static 'img/down.png' %}" alt="botaoParaBaixo"></a>
+          </div>
+        </section>
 
   </section>
   <!-- End Poster Section -->
-  <section id="btn-down">
-    <div class="container">
-      <a href="#poema">
-      <img src="{% static 'img/down.png' %}" alt="botaoParaBaixo"></a>
-    </div>
-  </section>
+
   <section id="poema">
     <div class="container">
       <h2>“A roupa era curta</h2>
