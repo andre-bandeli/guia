@@ -1,6 +1,8 @@
 ## Guia Virtual de Atendimento à Mulheres Vitímas de Violência | Pesquisa Mestrado Unicamp 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
+![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![Badge](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Badge](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
 ![Badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -12,7 +14,7 @@ vários mestrandos, doutorandos, residentes, cuja pesquisadora principal é a Pr
 
 ### Deploy Heroku
 
-https://netflix-template-heroku.herokuapp.com/
+https://api-pesquisa-01.herokuapp.com/
 
 ### Ferramentas utilizadas
 
@@ -32,16 +34,25 @@ obs: este é um projeto open-source e colaborativo. Para rodar em seu servidor l
 - rode os comandos de migração: python manage.py migrate e python manage.py makemigrations
 - inicie o servidor local: python manage.py runserver
 
-### Features Adicionais
+### Implementações
 
-- Implementação do Django
-- Sistema de autenticação
-- Sistema de rotas
+- Navbar responsiva
+- Carrousel Apresentação Pesquisa
+- Guia de Vídeos
+- Filtro JS (section map)
+- Template Grid Bootstrap
+- Página Sobre
 - deploy com Heroku
 
 ### Features à implementar
 
-- API Google auth
+- Captura de mensagens/email
+- Seção textos/referências acadêmicas
+
+### Issues
+
+- Corrigir tipografia
+- Melhorar pontos do responsivo
 
 ![Captura de tela de 2022-06-05 18-08-01_Easy-Resize com](https://user-images.githubusercontent.com/87938869/172070677-4184f594-837e-4fa2-bd59-9b1e150e3d80.jpg)
 ![Captura de tela de 2022-06-05 18-07-50_Easy-Resize com (1)](https://user-images.githubusercontent.com/87938869/172070740-cdb86f95-5111-48b2-9524-8bccef60ab18.jpg)
