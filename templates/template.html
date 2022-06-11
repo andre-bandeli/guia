@@ -144,7 +144,7 @@
         
         <button type="button" class="active" data-filter=".sexual">Sexual</button>
         {% for tipos in tipos_violencia %}
-        <button type="button"  data-filter=".{{tipos.nome}}"> {{tipos.nome}}</button>
+        <button type="button"  data-filter=".{{tipos.slug}}"> {{tipos.nome}}</button>
         {% endfor %}
 
       </div>
@@ -160,7 +160,7 @@
 
       </div>
         {% for tipos in tipos_violencia %}
-          <div class="col-10 element-item {{tipos.nome}}">
+          <div class="col-10 element-item {{tipos.slug}}">
     
               <div class="box">
                   <h2>{{tipos.descricao}}</h2>     

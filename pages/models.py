@@ -63,7 +63,7 @@ class GuiaVideos(models.Model):
 class TiposViolencia(models.Model):
     nome = models.CharField(max_length=150)
     descricao = models.TextField(max_length=400)
-
+    slug = models.CharField(max_length=150)
     class Meta:
         verbose_name = "Tipos Violência"
         verbose_name_plural = "Tipos Violência"
