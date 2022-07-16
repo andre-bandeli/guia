@@ -5,11 +5,11 @@
 
 {% block content %}
 
- <!-- Hero Section -->
- <section id="hero">
-  <div class="hero-container">
+ <!-- Home Section -->
+ <section id="home">
+  <div class="home-container">
 
-      <a href="index.html" class="hero-logo" data-aos="zoom-in"></a>
+      <a href="index.html" class="home-logo" data-aos="zoom-in"></a>
       <h1 data-aos="zoom-in">Repositório Online</h1>
       <h2 data-aos="fade-up">GUIA VIRTUAL SOBRE ATENDIMENTO A MULHERES VÍTIMAS DE VIOLÊNCIA</h2>
       <a data-aos="fade-up" data-aos-delay="200" href="#theme-carrousel" class="btn-get-started scrollto">Introdução</a>
@@ -24,21 +24,21 @@
   </div>
 </section>
 
-<!-- End Hero -->
+<!-- End Home -->
 <!-- Header -->
 <header id="header" class="d-flex align-items-center">
   <div class="container d-flex align-items-center justify-content-between">
 
     <div class="logo">
-      <a href="index.html"><img src="{% static 'img/unicamp-logo.png' %}" alt="imagemInicial" class="img-fluid"></a>
+      <a href="index.html"><img src="" alt="imagemInicial" class="img-fluid"></a>
     </div>
-
+  
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto active" href="#home">Home</a></li>
         <li><a class="nav-link scrollto" href="#carrousel">Introduçao</a></li>
         <li><a class="nav-link scrollto" href="#guia">Guia</a></li>
-        <li><a class="nav-link scrollto" href="#servicos">Mapa da Violência</a></li>
+        <li><a class="nav-link scrollto" href="#map">Mapa da Violência</a></li>
         <li><a class="nav-link scrollto" href="#poster">Referências</a></li>
         <li><a class="nav-link scrollto" href="#grid-template">+ Conteúdos</a></li>
         <li><a class="nav-link scrollto" href="#poema">Manifesto</a></li>
@@ -48,6 +48,26 @@
     </nav>
 
   </div>
+ <script>
+      $(document).ready(function(){
+
+        var containerHeight = $('#container').height();
+
+        $(window).scroll(function(){
+          var scrollPosition = $(window).scrollTop();
+          if (scrollPosition > (containerHeight / 2))
+          {
+            $('img').attr("src", "http://www.cosplay.com/i/costumes/200/313779.jpg");   
+          }
+          else if (scrollPosition < (containerHeight / 2))
+          {
+            $('img').attr("src", "http://www.unikgamer.com/characters/face/ryu-street-fighter-85.jpg"); 
+          }
+        }) // scroll function
+
+      })// end document
+ </script>
+  
 </header>
 <!-- End Header -->
 

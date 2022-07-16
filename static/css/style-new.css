@@ -158,6 +158,8 @@ table {
   }
   .navbar li {
     position: relative;
+    padding-right: 10px;
+
   }
   .navbar a, .navbar a:focus {
     display: flex;
@@ -185,7 +187,7 @@ table {
   .navbar .dropdown ul {
     display: block;
     position: absolute;
-    left: 14px;
+    left: 10px;
     top: calc(100% + 30px);
     margin: 0;
     padding: 10px 0;
@@ -197,7 +199,7 @@ table {
     transition: 0.3s;
   }
   .navbar .dropdown ul li {
-    min-width: 200px;
+    min-width: 180px;
   }
   .navbar .dropdown ul a {
     padding: 10px 20px;
@@ -328,15 +330,15 @@ table {
     display: block;
   }
   
-/* HERO SECTION */
+/* Home SECTION */
 
-  #hero {
+  #home {
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.884);
     position: relative;
   }
-  #hero .hero-container {
+  #home .home-container {
     position: absolute;
     bottom: 0;
     top: 0;
@@ -349,10 +351,10 @@ table {
     text-align: center;
     padding: 0 15px;
   }
-  #hero .hero-logo {
+  #home .home-logo {
     margin-bottom: 30px;
   }
-  #hero h1 {
+  #home h1 {
     margin: 0 0 30px 0;
     font-weight: 700;
     line-height: 20px;
@@ -361,14 +363,14 @@ table {
     font-family: 'Raleway', sans-serif;
     margin-top: 25vh;
   }
-  #hero h2 {
+  #home h2 {
     color: #aeaeae;
     margin-bottom: 20px;
     font-size: 1vw;
     font-weight: 400;
     text-transform: uppercase;
   }
-  #hero h3 {
+  #home h3 {
     color: #aeaeae;
     margin-bottom: 30px;
     font-size: .7vw;
@@ -377,7 +379,7 @@ table {
     margin-top: 35vh;
     text-transform: uppercase;
   }
-  #hero h4 {
+  #home h4 {
     color: #aeaeae;
     margin-bottom: 1vh;
     font-size: .7vw;
@@ -385,7 +387,7 @@ table {
     text-transform: uppercase;
     font-family: 'Gotham', sans-serif;
   }
-  #hero .btn-get-started {
+  #home .btn-get-started {
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     text-decoration: none;
@@ -399,7 +401,7 @@ table {
     color: #fff;
     border: 1px solid #7531b4cc;
   }
-  #hero .btn-get-started:hover {
+  #home .btn-get-started:hover {
     transition: 0.5s ease-in-out;
     background: rgba(15, 132, 185, 0.726);
     color: #7cc576;
@@ -408,88 +410,88 @@ table {
   }
 
   @media (max-width: 1024px) {
-    #hero h1 {
+    #home h1 {
       font-size: 4vw;
     }
-    #hero h2 {
+    #home h2 {
       font-size: 1.5vw;
     }
-    #hero h3 {
+    #home h3 {
       font-size: 1.3vw;
     }
-    #hero h4 {
+    #home h4 {
       font-size: 1.3vw;
     }
   }
   @media (max-width: 950px) {
-    #hero h1 {
+    #home h1 {
       font-size: 4vw;
     }
-    #hero h2 {
+    #home h2 {
       font-size: 1.5vw;
     }
-    #hero h3 {  
+    #home h3 {  
       text-align: justify;
     }
-    #hero h4 {
+    #home h4 {
     }
   }
   @media (max-width: 800px) {
-    #hero h1 {
+    #home h1 {
       font-size: 4vw;
     }
-    #hero h2 {
+    #home h2 {
       font-size: 1.5vw;
     }
-    #hero h3 {
+    #home h3 {
       text-align: justify;
     }
   }
   @media (max-width: 600px) {
-    #hero h1 {
+    #home h1 {
       font-size: 6vw;
     }
-    #hero h2 {
+    #home h2 {
       font-size: 2vw;
     }
-    #hero h3 {
+    #home h3 {
       font-size: 1.5vw;
       text-align: justify;
       margin-top: 25vh;
     }
-    #hero h4 {
+    #home h4 {
       font-size: 1.5vw;
     }
   }
   @media (max-width: 450px) {
-    #hero h1 {
+    #home h1 {
       font-size: 6vw;
     }
-    #hero h2 {
+    #home h2 {
       font-size: 2.7vw;
     }
-    #hero h3 {
+    #home h3 {
       font-size: 1.8vw;
       margin-top: 20vh;
       text-align: justify;
     }
-    #hero h4 {
+    #home h4 {
       font-size: 1.8vw;
     }
   }
   @media (max-width: 350px) {
-    #hero h1 {
+    #home h1 {
       font-size: 6vw;
     }
-    #hero h2 {
+    #home h2 {
       font-size: 2.7vw;
     }
-    #hero h3 {
+    #home h3 {
       text-align: justify;
     }
   }
 
-  /* END HERO SECTION */
+  /* END home SECTION */
   
 .carrousel {
 
@@ -814,10 +816,9 @@ table {
 }
 #map .element-item  {
 
-  width: 90%;
-  height: 30vh;
-  margin-left: 5%;
-  margin-right: 10%;
+  width: 100%;
+  height: auto;
+
 }
 
 #map .button-group {
@@ -865,7 +866,7 @@ table {
   margin-right: auto;
 }
 #map .row .box {
-  margin-left: 5vh;
+  margin-left: 0vh;
   width: 100%;
 }
 #map .row h2 {
@@ -1177,16 +1178,22 @@ margin-top: 10vh;
   width: 100%;
   height: 5vh;
   margin-top: 15vh;
+  opacity: 0.8;
 }
 #btn-down .container{
   width: 5%;
-  margin-top: 5vh;
+  margin-top: 5vh;  
   height: 100%;
-  margin-left: 47%;
-  margin-right: 47%;
+  margin-left: 48%;
+  margin-right: 48%;
 }
 #btn-down .container img{
   width: 50px;
+  opacity: .5;
+}
+#btn-down .container img:hover{
+  opacity: .9;
+  transition: .2s;
 }
 @media (max-width: 550px) {
   #btn-down {
@@ -1305,7 +1312,7 @@ margin-top: 10vh;
 
  #about {
    width: 100%;
-   height: 150vh;
+   height: 180vh;
    position: absolute;
    margin-top: 10vh;
    
@@ -1313,10 +1320,10 @@ margin-top: 10vh;
  }
  #about .container {
   width: 80%;
-  height: 30vh;
+  height: auto;
 
   text-align: center;
-  margin-left: 10%;
+  margin-left: auto;
 }
 #about .container h2 {
   color: rgb(2, 2, 2);
@@ -1324,9 +1331,9 @@ margin-top: 10vh;
   font-size: 35px;
 }
 #about .container h3 {
-  color: rgb(0, 0, 0);
+  color: rgb(36, 33, 33);
   margin-top: 5%;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 50px;
   text-align: justify;
 }
@@ -1334,6 +1341,7 @@ margin-top: 10vh;
   width: 120px;
   height: 5px;
   margin-left: 30%;
+  border-radius: 5px;
   position: absolute;
   background-color: rgb(23, 212, 187);
 }
