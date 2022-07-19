@@ -17,7 +17,7 @@
          MOMENTO TEVE OU TERÁ CONTATO COM SITUAÇÕES DE VIOLÊNCIA CONTRA A MULHER NO EXERCÍCIO DA SUA PROFISSÃO... 
          SEJA VOCÊ PSICÓLOGO, ASSISTENTE SOCIAL, EDUCADOR, ESCRIVÃO, ENTREVISTADOR SOCIAL, MÉDICO, AGENTE COMUNITÁRIO DE SAÚDE, 
          SERVIÇOS GERAIS... ESTEJA VOCÊ NO CRAS, CREAS, PSF, DDM, ESCOLA, CAPS, JUDICIÁRIO, OU QUALQUER OUTRO SERVIÇO PÚBLICO. 
-        POR ISSO, ESTE GUIA É PARA VOCÊ; VOCÊ E SEUS COLEGAS DE TRABALHO.</h3>
+        POR ISSO, ESTE GUIA É PARA VOCÊ; VOCÊ E SEUS COLEGAS DE TRABALHO. <span>É DE NOSSA RESPONSABILIDADE ACOLHER ESSA DEMANDA!</span> </h3>
         
         <h4 data-aos="fade-up" >É DE NOSSA RESPONSABILIDADE ACOLHER ESSA DEMANDA!</h4>
 
@@ -30,7 +30,7 @@
   <div class="container d-flex align-items-center justify-content-between">
 
     <div class="logo">
-      <a href="index.html"><img src="" alt="imagemInicial" class="img-fluid"></a>
+      <a href="index.html"><img src="{% static 'img/unicamp-logo.png'%}" alt="imagemInicial" class="img-fluid"></a>
     </div>
   
     <nav id="navbar" class="navbar">
@@ -48,25 +48,7 @@
     </nav>
 
   </div>
- <script>
-      $(document).ready(function(){
 
-        var containerHeight = $('#container').height();
-
-        $(window).scroll(function(){
-          var scrollPosition = $(window).scrollTop();
-          if (scrollPosition > (containerHeight / 2))
-          {
-            $('img').attr("src", "http://www.cosplay.com/i/costumes/200/313779.jpg");   
-          }
-          else if (scrollPosition < (containerHeight / 2))
-          {
-            $('img').attr("src", "http://www.unikgamer.com/characters/face/ryu-street-fighter-85.jpg"); 
-          }
-        }) // scroll function
-
-      })// end document
- </script>
   
 </header>
 <!-- End Header -->
