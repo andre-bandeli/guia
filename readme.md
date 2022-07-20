@@ -15,7 +15,7 @@ vários mestrandos, doutorandos, residentes, cuja pesquisadora principal é a Pr
 
 ### Deploy Heroku
 
-https://api-pesquisa-01.herokuapp.com/
+https://guia-virtual.herokuapp.com/
 
 ### Ferramentas utilizadas
 
@@ -30,10 +30,10 @@ https://api-pesquisa-01.herokuapp.com/
 ### Para rodar o projeto:
 obs: este é um projeto open-source e colaborativo. Para rodar em seu servidor local, realize os seguintes passos 
 
-- ative sua virtual env
-- pip install -r requirements.txt
-- rode os comandos de migração: python manage.py migrate e python manage.py makemigrations
-- inicie o servidor local: python manage.py runserver
+    - ative sua virtual env
+    - pip install -r requirements.txt
+    - rode os comandos de migração: python manage.py migrate e python manage.py makemigrations
+    - inicie o servidor local: python manage.py runserver
 
 ### Implementações
 
