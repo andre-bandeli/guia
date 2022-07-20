@@ -734,6 +734,15 @@ table {
   font-family: 'Gotham', sans-serif;
   color: black;
 }
+.guide .col-12 .col-sm h5 {
+  font-size: 12px;
+  margin-left: 3vh ;
+  margin-top: 2vh;
+}
+.pt {
+  color: orangered;
+  font-weight: bold;
+}
 .guide .col-12 .col-sm h3 {
   width: 90%;
   margin-top: 3vh;
@@ -885,6 +894,7 @@ table {
   margin: 0;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 12px;
   margin-left: 70px;
   outline: none;
   align-items: center;
@@ -1102,7 +1112,6 @@ table {
 }
 #grid-template .title h2 {
   font-size: 35px;
-  background-color: white;
 }
 #grid-template .title h3 {
   font-size: 20px;
