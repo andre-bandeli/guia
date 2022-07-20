@@ -17,7 +17,7 @@
          MOMENTO TEVE OU TERÁ CONTATO COM SITUAÇÕES DE VIOLÊNCIA CONTRA A MULHER NO EXERCÍCIO DA SUA PROFISSÃO... 
          SEJA VOCÊ PSICÓLOGO, ASSISTENTE SOCIAL, EDUCADOR, ESCRIVÃO, ENTREVISTADOR SOCIAL, MÉDICO, AGENTE COMUNITÁRIO DE SAÚDE, 
          SERVIÇOS GERAIS... ESTEJA VOCÊ NO CRAS, CREAS, PSF, DDM, ESCOLA, CAPS, JUDICIÁRIO, OU QUALQUER OUTRO SERVIÇO PÚBLICO. 
-        POR ISSO, ESTE GUIA É PARA VOCÊ; VOCÊ E SEUS COLEGAS DE TRABALHO. <span>É DE NOSSA RESPONSABILIDADE ACOLHER ESSA DEMANDA!</span> </h3>
+        POR ISSO, ESTE GUIA É PARA VOCÊ; VOCÊ E SEUS COLEGAS DE TRABALHO. </h3>
         
         <h4 data-aos="fade-up" >É DE NOSSA RESPONSABILIDADE ACOLHER ESSA DEMANDA!</h4>
 
@@ -208,7 +208,15 @@
 
   
   </section>
-<!-- End Features Section  -->
+
+<!-- End Features Section -->
+
+<section id="btn-down">
+  <div class="container" style="margin-top: -5vh;">
+    <a href="#grid-template">
+    <img src="{% static 'img/down.png' %}" alt="imagem_slide"></a>
+  </div>
+</section>
   <section id="grid-template">
     <div class="title">
       <h2>Conteúdos Úteis</h2>
@@ -217,11 +225,12 @@
     
       <div>
         <section class="grid grid-template-areas-2">
-          {% for link in links_externos %}
-          <div class="item {{link.tag_classe}}">
+          {% for links in links_externos %}
+          <div class="item {{links.tag_classe}}"> <a href="{{links.link}}">
             <h2>
-              {{link.texto}}
+              {{links.texto}}
             </h2>
+          </a>
           </div>
           {% endfor %}
         </section>
@@ -237,6 +246,8 @@
   <!-- End Poster Section -->
 
   <section id="poema">
+    <img src="https://i.gifer.com/6xG.gif" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="GIF deep shkedimoto animation - animated GIF on GIFER - by Arashigul" 
+    data-noaft="1">
     <div class="container">
       <h2>“A roupa era curta</h2>
         <h2> Ela merecia.</h2>
@@ -261,6 +272,7 @@
   <source src="{% static 'img/woman-1.mp4' %}" type="video/webm">
 </video>
 </section>
+
 
 
 {% endblock %}

@@ -257,7 +257,7 @@ table {
     color: #fff;
   }
   
-  @media (max-width: 991px) {
+  @media (max-width: 1024px) {
     .mobile-nav-toggle {
       display: block;
     }
@@ -333,9 +333,11 @@ table {
   .navbar-mobile .dropdown > .dropdown-active {
     display: block;
   }
-  
-/* Home SECTION */
 
+
+  /*--------------------------------------------------------------
+  # Home
+  --------------------------------------------------------------*/
   #home {
     width: 100%;
     height: 100vh;
@@ -380,7 +382,7 @@ table {
     font-size: .7vw;
     line-height: 20px;
     font-weight: 400;
-    margin-top: 25vh;
+    margin-top: 30vh;
     text-transform: uppercase;
   }
   #home h4 {
@@ -421,10 +423,11 @@ table {
       font-size: 1.5vw;
     }
     #home h3 {
-      font-size: 1.3vw;
+      margin-top: 25vh;
+      font-size: 1.1vw;
     }
     #home h4 {
-      font-size: 1.3vw;
+      font-size: 1.1vw;
     }
   }
   @media (max-width: 950px) {
@@ -432,12 +435,15 @@ table {
       font-size: 4vw;
     }
     #home h2 {
-      font-size: 1.5vw;
+      font-size: 1.8vw;
     }
     #home h3 {  
+      font-size: 1.4vw;
       text-align: justify;
     }
-    #home h4 {
+    #home h4 {  
+      font-size: 1.4vw;
+      text-align: justify;
     }
   }
   @media (max-width: 800px) {
@@ -445,10 +451,15 @@ table {
       font-size: 4vw;
     }
     #home h2 {
-      font-size: 1.5vw;
+      font-size: 2.2vw;
     }
     #home h3 {
       text-align: justify;
+      font-size: 1.7vw;
+    }
+    #home h4 {
+      text-align: justify;
+      font-size: 1.7vw;
     }
   }
   @media (max-width: 600px) {
@@ -470,20 +481,22 @@ table {
   @media (max-width: 450px) {
     #home h1 {
       font-size: 6vw;
+      margin-top: 0vh;
     }
     #home h2 {
       font-size: 2.7vw;
     }
     #home h3 {
-      font-size: 1.8vw;
+      font-size: 2.2vw;
       margin-top: 20vh;
       text-align: justify;
     }
     #home h4 {
-      font-size: 1.8vw;
+      margin-top: -2vh;
+      font-size: 2.2vw;
     }
   }
-  @media (max-width: 350px) {
+  @media (max-width: 380px) {
     #home h1 {
       font-size: 6vw;
     }
@@ -491,12 +504,21 @@ table {
       font-size: 2.7vw;
     }
     #home h3 {
+      font-size: 2.5vw;
+      text-align: justify;
+    }
+    #home h4 {
+      font-size: 2.7vw;
       text-align: justify;
     }
   }
 
   /* END home SECTION */
-  
+
+
+/*--------------------------------------------------------------
+  # Slider
+--------------------------------------------------------------*/
 .carrousel {
 
     width: 100%;
@@ -609,12 +631,12 @@ table {
 
 @media (max-width: 550px) {
   .carrousel {
-
     height: auto;
   }
   .carrousel .owl-carousel .item{
     width: 100%;
     display: inline-block;
+    margin-top: -5vh;
   }
   .carrousel .owl-carousel .item .box h2 {
    font-size: 25px;
@@ -631,6 +653,7 @@ table {
   .carrousel .owl-carousel .item{
     width: 100%;
     display: inline-block;
+    margin-top: -10vh;
   }
   .carrousel .owl-carousel .item .box h2 {
    font-size: 22px;
@@ -643,6 +666,8 @@ table {
     line-height: 30px;
   }
 }
+
+/* End Slider SECTION */ 
 
 
 .botao {
@@ -669,12 +694,12 @@ table {
   margin-right: 35%;
 }
 
-
+/*--------------------------------------------------------------
+  # Guide
+--------------------------------------------------------------*/
 .guide {
   width: 100%;
   height: auto;
-
-
 }
 .guide .title {
   width: 100%;
@@ -704,7 +729,7 @@ table {
   width: 90%;
   text-align: left;
   font-size: 25px;
-  margin-top: 2vh;
+  margin-top: 0vh;
   margin-left: 3vh;
   font-family: 'Gotham', sans-serif;
   color: black;
@@ -730,9 +755,9 @@ table {
   background-color: rgba(255, 0, 0, 0.726);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .guide {
-    height: 200vh;
+    height: auto;
   }
   .guide .col-12 {
     width: 100%;
@@ -743,6 +768,10 @@ table {
    width: 100%;
 
   }
+  .guide .col-12 .col-sm h2 {
+    margin-top: 3vh;
+ 
+   }
   .guide .col-12 .col-sm iframe {
     width: 100%;
    }
@@ -752,32 +781,43 @@ table {
     height: auto;
     margin-top: 15vh;
   }
+  .guide .title {
+    width: 100%;
+    margin-left: auto;
+  }
   .guide .title h2 {
-  font-size: 24px;
-  margin-top: 3vh;
+    width: 100%;
+    margin-left: 0vh;
+    text-align: center;
+    font-size: 6vw;
   }
   .guide .title h3 {
-    font-size: 12px;
+    width: 100%;
+    margin-left: 0vh;
+    font-size: 4vw;
 
     }
   .guide .col-12 .col-sm h2 {
-    font-size: 20px;
+    font-size: 4vw;
     margin-left: 0vh;
+    margin-top: 5vh;
   }
   .guide .col-12 .col-sm h3 {
-    font-size: 15px;
+    font-size: 3vw;
     margin-left: 0vh;
 }
-.guide .col-12 .col-sm iframe {
-  margin-left: 0vh;
-  margin-top: 2vh;
-  width: 90%;
+  .guide .col-12 .col-sm iframe {
+    margin-left: 0vh;
+    margin-top: 2vh;
+    width: 90%;
+  }
+  .guide .col-12 .col-sm .btn {
+    
+    margin-left: 0vh;
+  }
 }
-.guide .col-12 .col-sm .btn {
-  
-  margin-left: 0vh;
-}
-}
+
+/* End Guide SECTION */ 
 
 .title {
   width: 100%;
@@ -797,6 +837,11 @@ table {
   margin-top: 2vh;
 
 }
+
+
+/*--------------------------------------------------------------
+  # Map
+--------------------------------------------------------------*/ 
 
 #map {
   height: auto;
@@ -829,7 +874,7 @@ table {
   margin-bottom: 30px;
   height: 10vh;
   width: 100%;
-  margin-left: 20px;
+  margin-left: 0px;
   margin-right: auto;
 }
 
@@ -883,7 +928,7 @@ table {
 
 @media (max-width: 550px) {
   #map {
-    height: 130vh;
+    height: auto;
 
   }
   #map .title h2 {
@@ -892,7 +937,7 @@ table {
   }
 
     #map .title h3 {
-      font-size: 12px;
+      font-size: 18px;
   }
   #map .row .box {
     margin-left: 0vh;
@@ -902,7 +947,8 @@ table {
     font-size: 18px;
     text-align: justify;
     line-height: 30px;
-    margin-left: 2.5%;
+    margin-left: auto;
+    margin-right: auto;
     
   }
   #map .button-group {
@@ -916,7 +962,7 @@ table {
     margin-left: 20px;
     width: 40%;
     padding-top: 1vh;
-
+    font-size: 13px;
     border-radius: 10px;
     padding: 1vh;
   }
@@ -955,7 +1001,12 @@ table {
   }
   
 }
+/* End Map SECTION */ 
 
+
+/*--------------------------------------------------------------
+  # Poster
+--------------------------------------------------------------*/
 #poster {
   width: 100%;
   height: auto;
@@ -976,8 +1027,6 @@ table {
 	grid-template-rows: 70%;
 }
 
-
-/* Grid Item */
 #poster .item {
 	margin: 5px;
 	text-align: center;
@@ -1040,6 +1089,9 @@ table {
 }
 
 
+/*--------------------------------------------------------------
+  # Conteúdos
+--------------------------------------------------------------*/
 #grid-template {
   width: 100%;
   height: 80vh;
@@ -1050,6 +1102,7 @@ table {
 }
 #grid-template .title h2 {
   font-size: 35px;
+  background-color: white;
 }
 #grid-template .title h3 {
   font-size: 20px;
@@ -1171,16 +1224,16 @@ grid-template-areas:
   ;
 }
 
-/* Grid Item */
 #grid-template .item {
 margin: 5px;  
-text-align: center;
+text-align: left;
 font-size: 1.5em;
 background-color: rgba(10, 10, 10, 0.788);
 cursor: pointer;
 }
 #grid-template .logo h2 {
   color: rgb(255, 255, 255);
+  font-weight: bold;
   margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
@@ -1188,20 +1241,23 @@ cursor: pointer;
 }
 #grid-template .nav h2 {
   color: rgb(255, 255, 255);
+  font-weight: bold;
   margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
 }
 #grid-template .content h2 {
-  color: rgb(255, 255, 255);
+  color: rgb(37, 36, 36);
+  font-weight: bold;
   margin-top: 20%;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
 }
 #grid-template .sidenav h2 {
-  color: rgb(255, 255, 255);
+  color: rgb(26, 25, 25);
+  font-weight: bold;
   margin-top: 30%;
   font-size: 35px;
   margin-left: auto;
@@ -1211,6 +1267,7 @@ cursor: pointer;
 }
 #grid-template .advert h2,#grid-template .footer h2  {
   color: rgb(0, 0, 0);
+  font-weight: bold;
   margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
@@ -1260,6 +1317,12 @@ margin-top: 10vh;
 
 
 @media (max-width:550px) {
+  #grid-template .title h2 {
+    font-size: 24px;
+  }
+  #grid-template .title h3 {
+    font-size: 13px;
+  }
   #grid-template {
     margin-top: 20vh;
   }
@@ -1275,7 +1338,6 @@ margin-top: 10vh;
   #grid-template .sidenav h2 {
     font-size: 15px;
     margin-top: 10vh;
-    color: red;
   }
   #grid-template .advert h2,#grid-template .footer h2  {
     font-size: 12px;
@@ -1288,21 +1350,42 @@ margin-top: 10vh;
   height: 110vh;
   margin-top: 20vh;
   margin-left: 0vh;
-  background-color: rgba(0, 0, 0, 0.884);
+  background-color: rgb(0, 0, 0);
+  background-image: url(l.gif);
   color: white;
 }
 #poema .container {
   height: auto;
   position: absolute;
-  margin-top: 10%;
-  margin-left:40%;
+  margin-top: 15%;
+  margin-left:50%;
   width: 30%;
 }
 #poema h2 {
   font-size: 24px;
   margin-top: 2vh;
+  font-weight: 100;
   color: white;
   text-align: left;
+}
+#poema img {
+  width: 500px; 
+  height: 450px; 
+  margin: 500px 0px; 
+  position: absolute; 
+  margin-left: 50px; 
+  opacity: .3;
+}
+@media (max-width: 1280px) {
+ 
+  #poema .container {
+    margin-top: 10%;
+
+  }
+  #poema img {
+    margin-top: 25vh;
+  }
+
 }
 
 @media (max-width: 550px) {
@@ -1312,8 +1395,9 @@ margin-top: 10vh;
   #poema .container {
     height: auto;
     position: absolute;
-    margin-top: 10%;
-    margin-left: 15%;
+    margin-top: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
     width: 60%;
   }
   #poema h2 {
@@ -1321,8 +1405,22 @@ margin-top: 10vh;
     margin-top: 2vh;
     color: white;
   }
+  #poema img {
+    margin-left: 0vh;
+    width: 300px;
+    height: 250px;
+    margin-top: 72vh;
+  }
 }
+@media (max-width: 470px) {
 
+  #poema img {
+    margin-left: 0vh;
+    width: 250px;
+    height: 250px;
+    margin-top: 70vh;
+  }
+}
 
 
 
@@ -1336,7 +1434,6 @@ margin-top: 10vh;
 	min-width: 100%; 
 	min-height: 100%;
 	width: 100%; 
-	height: auto; 
 	z-index: -1000;
 	background-size: cover; 
 }
@@ -1405,12 +1502,41 @@ margin-top: 10vh;
 #Mensagem {
   height: 80%;
 }
+
+
 #footer {
   width: 100%;
-  height: 5vh;
+  height: 7vh;
+  margin-top: -1%;
   background-color: rgb(54, 52, 52);
   position: absolute;
-  margin-top: 130%;
+  display: flex;
+}
+#footer-about {
+  width: 100%;
+  height: 7vh;
+  margin-top: 10%;
+  background-color: rgb(54, 52, 52);
+  position: absolute;
+  display: flex;
+}
+#footer .col-2, #footer-about .col-2 {
+  margin-top: 1%;
+}
+#footer .col-2 img, #footer-about .col-2 img {
+  margin-top: 2%;
+}
+#footer .col-8, #footer-about .col-8 {
+  text-align: center;
+}
+#footer .col-8 h4, #footer-about .col-8 h4 {
+  color: white;
+  margin-top: 3vh;
+  font-weight:200;
+}
+#footer .col-2 img, #footer-about .col-2 img {
+  margin-left: 5%;
+  cursor: pointer;
 }
 #about .container .col-12 {
   display: flex;
@@ -1460,6 +1586,28 @@ margin-top: 10vh;
   margin-top: 15%;
 }
 
+@media (max-width: 550px) {
+  #about .container .col-12 {
+    display: flex;
+  }
+  #about .container .col-12 .col-6 .container-md {
+    width: 100%;
+  }
+  #about .container .col-12 .col-6 .container-md h2 {
+    font-size: 20px;
+    margin-top: 13vh;
+    text-align: left;
+  }
+  #about .container .col-12 .col-6 .container-md h3 {
+    width: 100%;
+    font-size: 14px;
+    text-align: end;
+    line-height: 2.5vh;
+  }
+  #about .container .forms {
+    margin-top: 50%;
+  }
+}
 
 
 #page_text {
