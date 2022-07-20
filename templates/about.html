@@ -10,18 +10,18 @@
   <div class="container d-flex align-items-center justify-content-between">
 
     <div class="logo">
-      <a href="index.html"><img src="#" alt="imagemInicial" class="img-fluid"></a>
+      <a href="index.html"><img src="{% static 'img/unicamp-logo.png' %}" alt="imagemInicial" class="img-fluid"></a>
     </div>
 
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a class="nav-link scrollto active" href="/">Home</a></li>
+        <li><a class="nav-link scrollto" href="/">Home</a></li>
         <li><a class="nav-link scrollto" href="/#carrousel">Introduçao</a></li>
         <li><a class="nav-link scrollto" href="/#guia">Guia</a></li>
-        <li><a class="nav-link scrollto" href="/#servicos">Mapa da Violência</a></li>
+        <li><a class="nav-link scrollto" href="/#map">Mapa da Violência</a></li>
         <li><a class="nav-link scrollto" href="/#grid-template">+ Conteúdos</a></li>
         <li><a class="nav-link scrollto" href="/#poema">Manifesto</a></li>
-        <li><a class="nav-link scrollto" href="/#poema">Sobre</a></li>
+        <li><a class="nav-link scrollto active" href="/#poema">Sobre</a></li>
       </ul>
       <img class="bi bi-list mobile-nav-toggle" src="{% static 'img/menu.png' %}"></i>
     </nav>
@@ -33,7 +33,7 @@
 
 <div id="about">
   <div class="container">
-    <h2>Sobre a Pesquisa</h2>
+    <h2>Sobre o Guia</h2>
     <div class="sublime">
 
     </div>
@@ -62,46 +62,77 @@
     <h3>
       {{sobre_pesquisadora.texto}}
     </h3>
-    <h3>Entre em contato</h3>
 
-    <div class="forms">
-      <form>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-          </div>
-          <div class="form-group col-md-2">
-            <label for="tel">Telefone</label>
-            <input type="tel" class="form-control" id="tel">
-          </div>
-         
+    <div class="col-12">
+      <div class="col-6">
+        <div class="container-md">
+            <h2>Entre em contato</h2>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              Eum laborum sapiente odit obcaecati aliquid quam architecto laudantium.</h3>
+            <div class="redes">
+              <div class="col-2 justify-content-between">
+                <img src="{% static 'img/linkedin.png' %}" width="40px" alt="">
+              </div>
+              <div class="col-2 justify-content-between">
+                <img class="img-lattes" src="{% static 'img/lattes.png' %}" width="60px" alt="">
+              </div>
+            </div>
         </div>
-       
-      
-        <div class="form-row">
-          <div class="form-group col-md-12">
-            <label for="Mensagem">Mensagem</label>
-            <input type="text" class="form-control" id="Mensagem">
-          </div>
+
+      </div>
+      <div class="col-6">
+        <div class="forms">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="nome">Nome</label>
+                <input type="name" class="form-control" id="nome" placeholder="Nome">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="tel">Telefone</label>
+                <input type="tel" class="form-control" id="tel" placeholder="Telefone">
+              </div>
+             
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12 msg">
+                <label for="Mensagem">Mensagem</label>
+                <input type="text" class="form-control" id="Mensagem" placeholder="Insira sua mensagem">
+              </div>
+              
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-danger">Enviar</button>
+            </div>
           
+          </form>
         </div>
-        <div class="form-group">
-          <button type="submit" class="btn btn-danger">Enviar</button>
-        </div>
-      
-      </form>
+      </div>
     </div>
+  
+
+    
     
   </div>
+
+  <div id="footer-about">
+    <div class="col-2">
+       <a href="https://github.com/andre-bandeli"> <img src="{% static 'img/github.png' %}" width="25px" alt=""></a>
+       <a href="https://www.linkedin.com/in/andrébandeli/"> <img src="{% static 'img/in.png' %}" width="25px" alt=""></a>
+    </div>
+    <di class="col-8">
+     <h4>© 2022 Copyright: André Bandeli</h4>
+    </di>
+    <div class="col-2">
+     
+     </div>
+  
+  </div>
 </div>
-
-
-<div id="footer">
-
-</div>
-
-
 
 
 {% endblock %}

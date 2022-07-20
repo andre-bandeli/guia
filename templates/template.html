@@ -5,11 +5,11 @@
 
 {% block content %}
 
- <!-- Hero Section -->
- <section id="hero">
-  <div class="hero-container">
+ <!-- Home Section -->
+ <section id="home">
+  <div class="home-container">
 
-      <a href="index.html" class="hero-logo" data-aos="zoom-in"></a>
+      <a href="index.html" class="home-logo" data-aos="zoom-in"></a>
       <h1 data-aos="zoom-in">Repositório Online</h1>
       <h2 data-aos="fade-up">GUIA VIRTUAL SOBRE ATENDIMENTO A MULHERES VÍTIMAS DE VIOLÊNCIA</h2>
       <a data-aos="fade-up" data-aos-delay="200" href="#theme-carrousel" class="btn-get-started scrollto">Introdução</a>
@@ -17,28 +17,28 @@
          MOMENTO TEVE OU TERÁ CONTATO COM SITUAÇÕES DE VIOLÊNCIA CONTRA A MULHER NO EXERCÍCIO DA SUA PROFISSÃO... 
          SEJA VOCÊ PSICÓLOGO, ASSISTENTE SOCIAL, EDUCADOR, ESCRIVÃO, ENTREVISTADOR SOCIAL, MÉDICO, AGENTE COMUNITÁRIO DE SAÚDE, 
          SERVIÇOS GERAIS... ESTEJA VOCÊ NO CRAS, CREAS, PSF, DDM, ESCOLA, CAPS, JUDICIÁRIO, OU QUALQUER OUTRO SERVIÇO PÚBLICO. 
-        POR ISSO, ESTE GUIA É PARA VOCÊ; VOCÊ E SEUS COLEGAS DE TRABALHO.</h3>
+        POR ISSO, ESTE GUIA É PARA VOCÊ; VOCÊ E SEUS COLEGAS DE TRABALHO. </h3>
         
         <h4 data-aos="fade-up" >É DE NOSSA RESPONSABILIDADE ACOLHER ESSA DEMANDA!</h4>
 
   </div>
 </section>
 
-<!-- End Hero -->
+<!-- End Home -->
 <!-- Header -->
 <header id="header" class="d-flex align-items-center">
   <div class="container d-flex align-items-center justify-content-between">
 
     <div class="logo">
-      <a href="index.html"><img src="{% static 'img/unicamp-logo.png' %}" alt="imagemInicial" class="img-fluid"></a>
+      <a href="index.html"><img src="{% static 'img/unicamp-logo.png'%}" alt="imagemInicial" class="img-fluid"></a>
     </div>
-
+  
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto active" href="#home">Home</a></li>
         <li><a class="nav-link scrollto" href="#carrousel">Introduçao</a></li>
         <li><a class="nav-link scrollto" href="#guia">Guia</a></li>
-        <li><a class="nav-link scrollto" href="#servicos">Mapa da Violência</a></li>
+        <li><a class="nav-link scrollto" href="#map">Mapa da Violência</a></li>
         <li><a class="nav-link scrollto" href="#poster">Referências</a></li>
         <li><a class="nav-link scrollto" href="#grid-template">+ Conteúdos</a></li>
         <li><a class="nav-link scrollto" href="#poema">Manifesto</a></li>
@@ -48,6 +48,8 @@
     </nav>
 
   </div>
+
+  
 </header>
 <!-- End Header -->
 
@@ -206,7 +208,15 @@
 
   
   </section>
-<!-- End Features Section  -->
+
+<!-- End Features Section -->
+
+<section id="btn-down">
+  <div class="container" style="margin-top: -5vh;">
+    <a href="#grid-template">
+    <img src="{% static 'img/down.png' %}" alt="imagem_slide"></a>
+  </div>
+</section>
   <section id="grid-template">
     <div class="title">
       <h2>Conteúdos Úteis</h2>
@@ -215,11 +225,12 @@
     
       <div>
         <section class="grid grid-template-areas-2">
-          {% for link in links_externos %}
-          <div class="item {{link.tag_classe}}">
+          {% for links in links_externos %}
+          <div class="item {{links.tag_classe}}"> <a href="{{links.link}}">
             <h2>
-              {{link.texto}}
+              {{links.texto}}
             </h2>
+          </a>
           </div>
           {% endfor %}
         </section>
@@ -235,6 +246,8 @@
   <!-- End Poster Section -->
 
   <section id="poema">
+    <img src="https://i.gifer.com/6xG.gif" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="GIF deep shkedimoto animation - animated GIF on GIFER - by Arashigul" 
+    data-noaft="1">
     <div class="container">
       <h2>“A roupa era curta</h2>
         <h2> Ela merecia.</h2>
@@ -259,6 +272,7 @@
   <source src="{% static 'img/woman-1.mp4' %}" type="video/webm">
 </video>
 </section>
+
 
 
 {% endblock %}
