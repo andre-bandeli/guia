@@ -28,30 +28,28 @@
 <!-- Header -->
 <header id="header" class="d-flex align-items-center">
   <div class="container d-flex align-items-center justify-content-between">
-
-    <div class="logo">
-      <a href="index.html"><img src="{% static 'img/unicamp-logo.png'%}" alt="imagemInicial" class="img-fluid"></a>
-    </div>
   
     <nav id="navbar" class="navbar">
       <ul>
         <li><a class="nav-link scrollto active" href="#home">Início</a></li>
         <li><a class="nav-link scrollto" href="#carrousel">Apresentação</a></li>
-        <li><a class="nav-link scrollto" href="#guia">CENA 1: ELAS DERRAMAM</a></li>
-        <li><a class="nav-link scrollto" href="#guia">Introdução</a></li>
-        <li><a class="nav-link scrollto" href="#guia">CENA 2: Acolher</a></li>
+        <li><a class="nav-link scrollto" href="#guia-1">CENA 1: ELAS DERRAMAM</a></li>
+        <li><a class="nav-link scrollto" href="#introducao">Introdução</a></li>
+        <li><a class="nav-link scrollto" href="#guia-2">CENA 2: Acolher</a></li>
         <li><a class="nav-link scrollto" href="#map">Tipos de Violência</a></li>
-        <li><a class="nav-link scrollto" href="#map">Continuando</a></li>
-        <li><a class="nav-link scrollto" href="#map">Não se Cale</a></li>
-        <li><a class="nav-link scrollto" href="#map">Fluxo</a></li>
-        <li><a class="nav-link scrollto" href="#map">Concluindo...</a></li>
-        <li><a class="nav-link scrollto" href="#map">CENA 3: Juntar as Peças</a></li>
+        <li><a class="nav-link scrollto" href="#introducao-t">Continuando</a></li>
+        <li><a class="nav-link scrollto" href="#texto-2">Não se Cale</a></li>
+        <li><a class="nav-link scrollto" href="#slider">Concluindo...</a></li>
+        <li><a class="nav-link scrollto" href="#guia-3">CENA 3: Juntar as Peças</a></li>
         <li><a class="nav-link scrollto" href="#grid-template">+ Conteúdos</a></li>
         <li><a class="nav-link scrollto" href="#poema">"AINDA SEREMOS FELIZES?"</a></li>
         <li><a class="nav-link scrollto" href="/about">Sobre</a></li>
       </ul>
       <img class="bi bi-list mobile-nav-toggle" src="{% static 'img/menu.png' %}"></i>
     </nav>
+    <div class="logo">
+      <a href="index.html"><img src="{% static 'img/unicamp-logo.png'%}" alt="imagemInicial" class="img-fluid"></a>
+    </div>
 
   </div>
 
@@ -104,13 +102,13 @@
 
 <section id="btn-down">
   <div class="container">
-    <a href="#guia">
+    <a href="#guia-1">
     <img src="{% static 'img/down.png' %}" alt="botaoParaBaixo"></a>
   </div>
 </section>
 
 <!-- Features Section -->
-<div class="guide" id="guia">
+<div class="guide" id="guia-1">
   <div class="title">
     <h2>CENA 1: Elas derramam</h2>
     
@@ -132,14 +130,13 @@
 
   <section id="btn-down">
     <div class="container">
-      <a href="#map">
+      <a href="#introducao">
       <img src="{% static 'img/down.png' %}" alt="botaoParaBaixo"></a>
     </div>
   </section>
 </div>
 
 <!-- End Features Section -->
-
 
 <!-- Introdução section -->
 
@@ -167,7 +164,7 @@
 
 <section id="btn-down">
   <div class="container">
-    <a href="#poster">
+    <a href="#guia-2">
     <img src="{% static 'img/down.png' %}" alt="imagem_slide"></a>
   </div>
 </section>
@@ -175,9 +172,8 @@
 
 <!-- end Introdução section -->
 
-
 <!-- Features Section -->
-<div class="guide" id="guia">
+<div class="guide" id="guia-2">
   <div class="title">
     <h2>Cena 2: Acolher</h2>
     
@@ -300,12 +296,11 @@
 
   <div class="tie-2">
     <h2>Não se cale!</h2>
-    
   </div>
   
   <div class="cont-texto-2">
 
-    <div class="col-6">
+    <div class="col-6-lm">
       <h2> A violência contra a mulher (assim como outras violências e algumas doenças) são de notificação 
         compulsória. O que isso significa? Que, como profissionais, não podemos nos calar diante de situações de 
         suspeita ou confirmação de violência e precisamos avisar os outros serviços. A Portaria nº. 2.406/04/GM do 
@@ -313,33 +308,28 @@
         de ficha de notificação para preencher com algumas informações como telefone, endereço, nome, 
         tipo de violência percebido, mesmo que não tenhamos todas as informações. 
         Com esse documento, alimentamos um sistema de informação em que toda a rede de serviços pode se movimentar para atender essas violências, 
-        tentar minimizar danos, tentar interromper as violências cíclicas.</h2>
+        tentar minimizar danos, tentar interromper as violências cíclicas.
+        </h2>
+        <h2>
 
-        <h2>Falando nisso… você sabia que a Prefeitura Municipal da Estância Turística de Ilha Solteira/SP 
+        Falando nisso… você sabia que a Prefeitura Municipal da Estância Turística de Ilha Solteira/SP 
           possui sua própria ficha de notificação de violência contra a mulher? 
           Pois é, houve todo um trabalho e encontros de profissionais de diferentes setores para estruturar o 
           fluxo de atendimento a mulheres que sofreram violência e disso saiu a ficha de notificação.</h2>
     </div>
 
-    <div class="col-6">
+    <div class="col-6-lm">
         <h2>Em resumo: temos um Protocolo de Fluxo de Atendimento a Mulheres Vítimas de Violência que diz 
           que cada componente da rede de serviços do município tem responsabilidade no 
           atendimento adequado a mulheres que sofreram violência. Ou seja, não é só CREAS e 
           Delegacia de Polícia que lidam com essa questão, pois ela pode surgir em diversos lugares. 
           Vamos assistir a esse vídeo que mostra como os serviços se relacionam:</h2>
 
-          <iframe width="650" height="355" src="https://www.youtube.com/embed/rE_PPsxau5I" title="YouTube video player" frameborder="0" 
+          <iframe src="https://www.youtube.com/embed/rE_PPsxau5I" title="YouTube video player" frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
   </div>
 
-</section>
-
-<section id="btn-down">
-  <div class="container">
-    <a href="#poster">
-    <img src="{% static 'img/down.png' %}" alt="imagem_slide"></a>
-  </div>
 </section>
 
 
@@ -353,10 +343,9 @@
 <div class="slider" id="slider">
 
 
-  <div class="title">
+
     <h2>Concluindo</h2>
-    
-  </div>
+ 
   <div class="owl-carousel owl-theme" id="theme-carrousel">
 
       <div class="item">
@@ -420,8 +409,6 @@
               ações que modificam nossa realidade. Nos transformamos e transformamos o mundo ao mesmo tempo.</h4>
         </div>
       <div>
-         
-
     </div>
        
     </div>
@@ -429,11 +416,17 @@
     </div>
 
 </div>
+<section id="btn-down">
+  <div class="container">
+    <a href="#map">
+    <img src="{% static 'img/down.png' %}" alt="botaoParaBaixo"></a>
+  </div>
+</section>
 <!-- End slider -->
 
 
 <!-- Features Section -->
-<div class="guide" id="guia">
+<div class="guide" id="guia-3">
   <div class="title">
     <h2>CENA 3: Juntar as peças</h2>
     
@@ -495,10 +488,145 @@
   <!-- End Poster Section -->
 
   <section id="poema">
-    <img src="https://i.gifer.com/6xG.gif" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="GIF deep shkedimoto animation - animated GIF on GIFER - by Arashigul" 
-    data-noaft="1">
-    <div class="container">
-      
+
+    <h2>Ainda seremos felizes?</h2>
+    <h3><i>De Hilda Hilst. Crônica publicada originalmente no jornal Correio Popular em 1995.</i> </h3>
+   
+    <div class="container-poema">
+        <div class="col-4">
+          <h3>
+            Ando sentindo tudo aquilo quando vem a 
+            aeromoça e diz: atenção, passageiros, 
+            apertem os cintos, não fumem… e agora 
+            todos comigo: Pai nosso que estais no céu etc…. 
+            Enfim, perigos de todos os lados. Não é bossa, 
+            terrorismo não, é pura verdade, 
+            pelo menos no que se refere à minha pessoa. 
+          </h3>
+
+          <h3 class="italic">
+            A pandemia potencializou muito a violência contra mulher,
+             e essa violência é nossa também, porque a gente é mulher 
+             como coletivo no mundo. A gente não é coletivo só aqui, 
+             a gente é no mundo.
+          </h3>
+          <h3 class="italic">
+            A gente tinha uma urgência. Essa urgência foi 
+            anterior ao despertar total. 
+            A gente tinha urgência de despertar.
+          </h3>
+          <h3>
+            E a tal da oxítona e da paroxítona, ébola ou ebola, 
+            mas tanto faz meu Deus, o negócio é que ele mata mesmo. 
+            E o ministro da Saúde dizendo que não vai deixar o vírus 
+            entrar. Ah é? Como? Não vai dar passaporte pra ele? E a 
+            tal da Antha? Gente! É Aquilo, o tal do Apocalipse! E
+             assassinatos, sequestros, bandidos tomando conta das 
+             cidades, e o petróleo… Cadê o presidente? Ficou mudo? 
+             E todo mundo andando normal, 
+            todo mundo pensando no amanhã e fazendo planinhos… 
+          </h3>
+          <h3>
+            Agora lembrei-me de uma frase no banheiro de
+             uma universidade americana: “Por falta de interesse, 
+             fica cancelado o Amanhã”. […]
+          </h3>
+          <h3 class="italic">
+            Empoderar significa mostrar que sempre tem alternativa.
+          </h3>
+
+        </div>
+        <div class="col-4">
+          
+          <h3>
+            E continuo dura como todos nós. Em pânico, dura, só me 
+            faltam frieiras. Sarna já tenho. Ah, o 
+            que colocam de cachorrinhos judiados no 
+            meu portão! E a minha maravilhosa amiga Mara 
+            Thereza Lira que faz os maiores sacrifícios 
+            para salvar cavalos espancados, doentes! Ainda 
+            bem que nós existimos pra salvar os desgraçados 
+            animais do planeta! E tem gente que ainda fica com 
+            ódio da gente gostar de animais.
+          </h3>
+          <h3>
+            E o que há de cretinos e boçais pelo mundo afora 
+            é assustador! O que há de jingado alienado e 
+            acefalia também. O que há de maldade e grosseria.
+             O que há de tara, de loucura, aquela babando verde, 
+             a outra, a estupidez, a bestialidade, a frivolidade… 
+             o que há de imbecis e escrotidão! E todo mundo malhando… 
+             coxas, bíceps, e boquitas e caras todas esticadas, bossa 
+             vento de proa… todos malhando… </h3>
+             <h3> Agora o Becker: “(…) falar 
+             de um novo homem cujo ego se funda inteiramente no corpo é
+              falar de uma criatura sub-humana”. Ativem seus neurônios,
+               madamas! Alô, alô, serotonina? (informe-se). Alô, alô,
+                luz no túnel? Afinal 
+            foi tiro ou bola de gude? Socorro! Blindados, é? Socorro!
+          </h3>
+          <h3 class="italic">
+            O machismo provoca violência, [...] mas ele também 
+            funciona porque esses
+             homens são muito frágeis.
+             <br>
+             “ah, sempre foi assim”
+             <br>
+             “ah, mas ele não me bateu ainda”
+             <br>
+             Por mais que a gente não vá resolver as injustiças e a 
+             desigualdade social, só o fato da gente trabalhar essa 
+             identificação já é um fator 
+             reflexivo e de superação da violência.
+          </h3>
+
+        </div>
+        <div class="col-4">
+        
+          <h3>
+            Notinha de Eduardo Galeano — “Os grandes portos da América 
+            Latina, escalas de trânsito das riquezas extraídas do solo e 
+            subsolo com destino aos distantes centros de domínios, se 
+            consolidavam como instrumentos de conquista e dominação contra 
+            os países a que pertenciam, e eram os vertedouros por onde se 
+            dilapidava a riqueza nacional. Os portos e as capitais queriam 
+            se parecer com 
+            Paris ou Londres, mas à retaguarda havia o deserto”.
+          </h3>
+          <h3>
+            Isso, leitor, te lembra de alguma coisa?
+          </h3>
+          <h3>
+            Tem coisa mais feminina que água?
+             Que ocupa, que acalanta, que acolhe...
+             É o nosso primeiro lar, é a água.
+
+             <br>
+
+             Ajudar algumas mulheres a enfrentar 
+             situações de violência fez lembrar de 
+             coisas que vivemos, e ajudou a voltarmos
+              em alguns contextos, visitar, entender,
+               elaborar, e voltar pra cá, pra hoje, voltar 
+               pro que somos. E construir esse distanciamento. 
+               As pontes que a gente construiu são nossas e ninguém 
+               vai tirar da gente. É sobre saber construir caminhos 
+               também de afastamento, que é pra gente poder ajudar inteiro,
+                porque se a gente se aproximar demais, a 
+             gente não consegue ajudar ninguém, nem a gente mesmo.
+          </h3>
+          <h3 class="italic">
+            Por conta de tudo isso, destacamos os 
+            dispositivos afetivos que construímos, 
+            que são muito importantes pra gente ter 
+            força e agir, e fluir como a gente fluiu. 
+            Laços foram construídos. A gente foi fluindo e 
+            acreditando nesse fluxo, e o fluxo trouxe a gente aqui. 
+            Vamos continuar no fluxo,
+             na correnteza. Na água, como tudo começou.
+          </h3>
+        
+        </div>
     </div>
   </section>
 <!-- Video Final -->
@@ -508,6 +636,25 @@
   <source src="{% static 'img/video.mp4' %}" type="video/webm">
 </video>
 </section>
+
+<section id="ft-1">
+  <div class="footer-1">
+
+  </div>
+</section>
+<div id="footer-about">
+  <div class="col-2">
+     <a href="https://github.com/andre-bandeli"> <img src="{% static 'img/github.png' %}" width="25px" alt=""></a>
+     <a href="https://www.linkedin.com/in/andrébandeli/"> <img src="{% static 'img/in.png' %}" width="25px" alt=""></a>
+  </div>
+  <di class="col-8">
+   <h4>© 2022 Copyright: André Bandeli</h4>
+  </di>
+  <div class="col-2">
+   
+   </div>
+
+</div>
 
 
 
